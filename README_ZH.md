@@ -1,7 +1,7 @@
 # LegionFanEmbeddedController
 
 # 项目简介
-本项目通过直接修改EC内存进行笔记本风扇控制
+本项目通过直接修改EC内存进行笔记本风扇控制 https://github.com/GermanAizek/WinRing0/
 
 本项目在Legion 7 16ACHg6 2021/r9000k 上测试过
 

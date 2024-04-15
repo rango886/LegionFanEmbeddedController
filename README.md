@@ -12,6 +12,8 @@ Before attempting on other models, make sure you have the ability to restore the
 The fan curve will be invalidated after switching performance mode (FN+Q).
 
 # How to Use
+Need to run as administrator by right-clicking
+
 It is recommended to create shortcuts for frequently used commands.
 
 The fan curve configuration is located in the config directory. Refer to the commands below to set the fan curve:

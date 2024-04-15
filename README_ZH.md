@@ -70,5 +70,5 @@ https://github.com/SmokelessCPUv2/Lagon-Fan-EC-Control
 # 捐赠
 
 <div>
-    <img src="assets\donation.png">
+    <img src="assets\b.png">
 </div>

@@ -69,4 +69,6 @@ https://github.com/johnfanv2/LenovoLegionLinux
 https://github.com/SmokelessCPUv2/Lagon-Fan-EC-Control
 
 # Donation
-![](assets\donation.png)
+<div>
+    <img src="assets\donation.png">
+</div>

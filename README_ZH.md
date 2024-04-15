@@ -68,7 +68,4 @@ https://github.com/johnfanv2/LenovoLegionLinux
 https://github.com/SmokelessCPUv2/Lagon-Fan-EC-Control
 
 # 捐赠
-<div style="display:inline-block">
-    <img src="assets\alipay.jpg" >
-    <img src="assets\wechat.jpg" >
-</div>
+![](assets\donation.png)

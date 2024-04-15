@@ -67,6 +67,8 @@ https://github.com/johnfanv2/LenovoLegionLinux
 
 https://github.com/SmokelessCPUv2/Lagon-Fan-EC-Control
 
+https://github.com/GermanAizek/WinRing0/
+
 # 捐赠
 
 <div>

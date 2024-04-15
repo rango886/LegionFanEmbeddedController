@@ -1,22 +1,22 @@
 # LegionFanEmbeddedController
-[中文介绍](README_ZH.md)
-# Introduction
-This project controls legion laptop fans by directly modifying the EC memory.
 
-The project has been tested on Legion 7 16ACHg6 2021/r9000k.
+# 项目简介
+本项目通过直接修改EC内存进行笔记本风扇控制
 
-Theoretically supports the 2020/2021 models of the Legion series.
+本项目在Legion 7 16ACHg6 2021/r9000k 上测试过
 
-Before attempting on other models, make sure you have the ability to restore the laptop BIOS.
+理论上支持 2020/2021年的拯救者机型
 
-The fan curve will be invalidated after switching performance mode (FN+Q).
+其他机型在尝试前，请有恢复笔记本BIOS的能力再做尝试
 
-# How to Use
-It is recommended to create shortcuts for frequently used commands.
+切换性能模式(FN+Q)后风扇曲线会失效
 
-The fan curve configuration is located in the config directory. Refer to the commands below to set the fan curve:
+# 使用方式
+推荐为常用命令创建快捷方式使用
+
+风扇曲线配置在config目录下，设置风扇曲线参考下方的命令
 ```
-# Read fan status
+# 读取风扇状态
 fan_ctrl.exe
 ########################### Read Mode ###########################
 FAN1 speed      1551                         FAN2 speed      1560
@@ -34,14 +34,14 @@ IC   upper temp   41,  44,  50, 127, 127, 127, 127, 127, 127,   0
 
 EC Firmware Ver  64                      EC Chip model    8227 v2
 
-# Write configuration without closing the command prompt window
+# 写入配置不关闭命令行窗口
 fan_ctrl.exe write .\config\silent1.json 1
 
-# Write configuration and close the command prompt window afterwards
+# 写入配置后关闭命令行窗口
 fan_ctrl.exe write .\config\silent1.json 0
 ```
 
-Explanation of the fan curve configuration:
+风扇曲线配置解释
 ```
 {
 	"FAN1_curve":     [   0,  15,  15,  15,  15,  15,  15,  15,  32,  32],
@@ -56,12 +56,11 @@ Explanation of the fan curve configuration:
 	"IC_upper_temp":  [  41,  44,  50, 127, 127, 127, 127, 127, 127,   0]
 }
 ```
+- FAN1_curve 和 FAN2_curve 代表两个风扇的曲线，风扇曲线有十个挡位
+- 设置的值代表乘以100后的值，上面配置中FAN1_curve第二档为15，风扇转速则为1500转
+- 每个风扇挡位所在的列有对应的温度
 
-- FAN1_curve and FAN2_curve represent the curves of two fans, with ten speed levels.
-- The values set represent the speed multiplied by 100. For example, in the configuration provided, a value of 15 in the second level of FAN1_curve corresponds to a fan speed of 1500 RPM.
-- Each column in the fan curve corresponds to a specific temperature range.
-
-# Special thanks
+# 感谢项目
 https://github.com/johnfanv2/LenovoLegionLinux
 
 https://github.com/SmokelessCPUv2/Lagon-Fan-EC-Control

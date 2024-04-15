@@ -4,13 +4,12 @@
 <div>
     <img src="assets\example.gif">
 </div>
+
 This project controls legion laptop fans by directly modifying the EC memory. https://github.com/GermanAizek/WinRing0/
 
 The project has been tested on Legion 7 16ACHg6 2021/r9000k.
 
 Theoretically supports the 2020/2021 models of the Legion series.
-
-Before attempting on other models, make sure you have the ability to restore the laptop BIOS.
 
 The fan curve will be invalidated after switching performance mode (FN+Q).
 

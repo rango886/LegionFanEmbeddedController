@@ -4,13 +4,12 @@
 <div>
     <img src="assets\example.gif">
 </div>
+
 本项目通过直接修改EC内存进行笔记本风扇控制 https://github.com/GermanAizek/WinRing0/
 
 本项目在Legion 7 16ACHg6 2021/r9000k 上测试过
 
 理论上支持 2020/2021年的拯救者机型
-
-其他机型在尝试前，请有恢复笔记本BIOS的能力再做尝试
 
 切换性能模式(FN+Q)后风扇曲线会失效
 

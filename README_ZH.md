@@ -66,3 +66,9 @@ fan_ctrl.exe write .\config\silent1.json 0
 https://github.com/johnfanv2/LenovoLegionLinux
 
 https://github.com/SmokelessCPUv2/Lagon-Fan-EC-Control
+
+# 捐赠
+<div style="padding:5px;border-style: solid;height:200px">
+    <img src="assets\alipay.jpg" >
+    <img style="float:right" src="assets\wechat.jpg" >
+</div>

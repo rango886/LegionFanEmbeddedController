@@ -1,6 +1,9 @@
 # LegionFanEmbeddedController
 [中文介绍](README_ZH.md)
 # Introduction
+<div>
+    <img src="assets\example.gif">
+</div>
 This project controls legion laptop fans by directly modifying the EC memory. https://github.com/GermanAizek/WinRing0/
 
 The project has been tested on Legion 7 16ACHg6 2021/r9000k.

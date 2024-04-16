@@ -19,7 +19,7 @@ GPU压力测试 https://www.geeks3d.com/gputest/
 
 风扇配置如下
 
-![image](assets\1.png)
+![image](assets/1.png)
 
 根据psensor显示的情况，在当前温度下，fan1和fan2曲线正常
 
@@ -29,7 +29,7 @@ GPU压力测试 https://www.geeks3d.com/gputest/
 sudo apt install sysbench
 sysbench --threads=16 cpu run
 ```
-![image](assets\2.png)
+![image](assets/2.png)
 
 当cpu的温度增加时，fan1和fan2曲线正常，fan1 1200rpm,fan2 1100 rpm
 
@@ -39,7 +39,7 @@ sysbench --threads=16 cpu run
 ./start_furmark_windowed_1024x640.sh
 ```
 
-![image](assets\3.png)
+![image](assets/3.png)
 
 当amd gpu的温度增加时，fan1和fan2曲线正常，fan1 1200rpm,fan2 1100 rpm
 
@@ -50,7 +50,7 @@ sudo prime-select nvidia
 ./start_furmark_windowed_1024x640.sh
 ```
 
-![image](assets\4.png)
+![image](assets/4.png)
 
 当nvidia gpu的温度增加时，fan1和fan2曲线都不正常，fan1 2300rpm,fan2 2300 rpm
 

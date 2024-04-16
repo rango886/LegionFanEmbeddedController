@@ -18,7 +18,7 @@ GPU stress test: [https://www.geeks3d.com/gputest/](https://www.geeks3d.com/gput
 
 The fan configuration is as follows:
 
-![image](assets\1.png)
+![image](assets/1.png)
 
 According to the readings from Psensor, at the current temperature, the fan1 and fan2 curves are normal.
 
@@ -27,7 +27,7 @@ According to the readings from Psensor, at the current temperature, the fan1 and
 sudo apt install sysbench
 sysbench --threads=16 cpu run
 ```
-![image](assets\2.png)
+![image](assets/2.png)
 
 When the CPU temperature increases, the fan1 and fan2 curves remain normal, with fan1 at 1200 rpm and fan2 at 1100 rpm.
 
@@ -37,7 +37,7 @@ Download from here: https://www.geeks3d.com/gputest/
 ./start_furmark_windowed_1024x640.sh
 ```
 
-![image](assets\3.png)
+![image](assets/3.png)
 
 When the temperature of the AMD GPU increases, the fan1 and fan2 curves remain normal, with fan1 at 1200 rpm and fan2 at 1100 rpm.
 
@@ -48,7 +48,7 @@ sudo prime-select nvidia
 ./start_furmark_windowed_1024x640.sh
 ```
 
-![image](assets\4.png)
+![image](assets/4.png)
 
 When the temperature of the NVIDIA GPU increases, neither the fan1 nor fan2 curves behave normally, with both running at 2300 rpm.
 

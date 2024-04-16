@@ -66,4 +66,4 @@ sudo prime-select nvidia
 假设有这么一个nvidia gpu fan曲线，如果只设置了fan1曲线(CPU),fan2曲线(amd GPU),而没有设置fan3曲线(nvidia GPU),
 当nvidia gpu的负载和温度增加的时候就会导致风扇转速不符合预期
 
-不知道怎样才能验证是否有nvidia gpu的风扇曲线，也许哪位好心人能把能帮帮我
+不知道怎样才能验证是否有nvidia gpu的风扇曲线

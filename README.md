@@ -13,6 +13,8 @@ Theoretically supports the 2020/2021 models of the Legion series.
 
 The fan curve will be invalidated after switching performance mode (FN+Q).
 
+There are some [problems](problem_en.md)
+
 # How to Use
 Need to run as administrator by right-clicking
 

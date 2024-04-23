@@ -13,7 +13,14 @@ Theoretically supports the 2020/2021 models of the Legion series.
 
 The fan curve will be invalidated after switching performance mode (FN+Q).
 
-There are some [problems](problem_en.md)
+There are some [problems](problem_en.md),
+To address this issue, it is necessary to downgrade the BIOS to GKCN24WW, but this may lead to other issues:
+
+1. Nvidia driver installation failure (error code 31, can be forcefully installed using dism++).
+
+2. For instance, setting the fan speeds of fan1 and fan2 at a lower speed of 1000rpm, but when the GPU load increases, the fans may produce significant electrical noise.
+
+I have not found a solution for the higher version of the BIOS at the moment.
 
 # How to Use
 Need to run as administrator by right-clicking
@@ -24,6 +31,8 @@ The fan curve configuration is located in the config directory. Refer to the com
 ```
 # Read fan status
 fan_ctrl.exe
+
+
 ########################### Read Mode ###########################
 FAN1 speed      1551                         FAN2 speed      1560
 
@@ -40,8 +49,12 @@ IC   upper temp   41,  44,  50, 127, 127, 127, 127, 127, 127,   0
 
 EC Firmware Ver  64                      EC Chip model    8227 v2
 
+
+
 # Write configuration without closing the command prompt window
 fan_ctrl.exe write .\config\silent1.json 1
+
+
 
 # Write configuration and close the command prompt window afterwards
 fan_ctrl.exe write .\config\silent1.json 0

@@ -29,6 +29,8 @@
 ```
 # 读取风扇状态
 fan_ctrl.exe
+
+
 ########################### Read Mode ###########################
 FAN1 speed      1551                         FAN2 speed      1560
 
@@ -45,8 +47,11 @@ IC   upper temp   41,  44,  50, 127, 127, 127, 127, 127, 127,   0
 
 EC Firmware Ver  64                      EC Chip model    8227 v2
 
+
 # 写入配置不关闭命令行窗口
 fan_ctrl.exe write .\config\silent1.json 1
+
+
 
 # 写入配置后关闭命令行窗口
 fan_ctrl.exe write .\config\silent1.json 0

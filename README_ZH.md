@@ -13,10 +13,10 @@
 
 切换性能模式(FN+Q)后风扇曲线会失效
 
-本项目还有些[问题](problem_zh.md)未解决,
-为解决这个问题，需要将BIOS降级到GKCN24WW，但是可能会导致其他的问题
+本项目还有些[问题](problem_zh.md)未解决(虽然设置了更低的风扇转速，但高负载风扇会锁定在2300转),
+为解决这个问题，需要将BIOS降级到GKCN24WW，但是可能会导致其他的问题，不一定会出现
 1. nvidia驱动装不上(error code 31，可以用dism++ 强制安装驱动) 
-2. 例如设置fan1和fan2的转速在较低的转速1000rpm, 但是当GPU负载上升的时候，风扇可能会有很大的电流声
+2. 例如设置fan1和fan2的转速在较低的转速1000rpm, 但是当GPU负载上升的时候，风扇可能会有电流声
 
 高版本的BIOS暂时没有找到解决方法
 
@@ -32,7 +32,12 @@ fan_ctrl.exe
 
 
 ########################### Read Mode ###########################
-FAN1 speed      1551                         FAN2 speed      1560
+AMD Ryzen 9 5900HX with Radeon Graphics                        67
+NVIDIA GeForce RTX 3080 Laptop GPU                             58
+GLOWAY YCT2TNVMe-M.2/80                                        44
+SAMSUNG MZVLB1T0HBLR-000L2                                     52
+
+FAN1 speed      1568                         FAN2 speed      1579
 
 FAN1 curve         0,  15,  15,  15,  20,  20,  20,  20,  32,  32
 FAN2 curve         0,  14,  15,  15,  20,  20,  20,  20,  32,  32
@@ -45,7 +50,7 @@ GPU  upper temp   60,  60,  60,  60,  60,  65,  69,  77, 127,   0
 IC   lower temp    0,  39,  42,  46, 127, 127, 127, 127, 127,   0
 IC   upper temp   41,  44,  50, 127, 127, 127, 127, 127, 127,   0
 
-EC Firmware Ver  64                      EC Chip model    8227 v2
+EC Firmware Ver  24                      EC Chip model    8227 v2
 
 
 # 写入配置不关闭命令行窗口

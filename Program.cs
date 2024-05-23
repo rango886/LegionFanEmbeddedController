@@ -8,9 +8,24 @@ using System.Threading;
 using System.Collections;
 using System.IO;
 using System.Text.Json;
+using LibreHardwareMonitor.Hardware;
 
 namespace fan_ctrl
 {
+    public class UpdateVisitor : IVisitor
+    {
+        public void VisitComputer(IComputer computer)
+        {
+            computer.Traverse(this);
+        }
+        public void VisitHardware(IHardware hardware)
+        {
+            hardware.Update();
+            foreach (IHardware subHardware in hardware.SubHardware) subHardware.Accept(this);
+        }
+        public void VisitSensor(ISensor sensor) { }
+        public void VisitParameter(IParameter parameter) { }
+    }
     public class FanConfig
     {
         public int[] FAN1_curve { get; set; }
@@ -28,6 +43,50 @@ namespace fan_ctrl
     }
     internal class Program
     {
+        static String ReadHW()
+        {
+            String hwStatus = "";
+            Computer computer = new Computer
+            {
+                IsCpuEnabled = true,
+                IsGpuEnabled = true,
+                IsMemoryEnabled = true,
+                IsMotherboardEnabled = true,
+                IsControllerEnabled = true,
+                IsNetworkEnabled = true,
+                IsStorageEnabled = true
+            };
+
+            computer.Open();
+            computer.Accept(new UpdateVisitor());
+
+            foreach (IHardware hardware in computer.Hardware)
+            {
+                //Console.WriteLine("Hardware: {0}", hardware.Name);
+
+                //foreach (IHardware subhardware in hardware.SubHardware)
+                //{
+                //    Console.WriteLine("\tSubhardware: {0}", subhardware.Name);
+
+                //    foreach (ISensor sensor in subhardware.Sensors)
+                //    {
+                //        Console.WriteLine("\t\tSensor: {0}, value: {1}", sensor.Name, sensor.Value);
+                //    }
+                //}
+
+                foreach (ISensor sensor in hardware.Sensors)
+                {
+                    if (sensor.Name == "Core (Tctl/Tdie)" || sensor.Name == "GPU Hot Spot" || sensor.Name == "Temperature")
+                    {
+                        hwStatus = hwStatus + string.Format("{0,-63}", hardware.Name) + string.Format("{0:0}\n", sensor.Value);
+                    }
+                    
+                }
+            }
+
+            computer.Close();
+            return hwStatus;
+        }
         static byte[] ConvertIntArrayToByteArray(int[] intArray)
         {
             byte[] byteArray = new byte[intArray.Length];
@@ -102,9 +161,13 @@ namespace fan_ctrl
         {
             while (true)
             {
+                String hwStatus = ReadHW();
+                
                 Console.Clear();
                 Console.WriteLine("########################### Read Mode ###########################");
+                Console.WriteLine(hwStatus);
                 ReadStatus();
+           
                 Thread.Sleep(2000);
             }
         }
@@ -158,7 +221,8 @@ namespace fan_ctrl
                 Console.Write("EC Firmware Ver  " + EC_FW_Ver);
                 Console.Write("                      ");
                 Console.WriteLine("EC Chip model    " + Chip_ID);
-
+                Console.Write("                      ");
+                
 
             }
         }

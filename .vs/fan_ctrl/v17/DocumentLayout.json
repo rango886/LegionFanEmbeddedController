@@ -1,20 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "V:\\code\\fan\\fan_ctrl\\fan_ctrl\\",
+  "WorkspaceRootPath": "V:\\code\\some_project\\fan_control\\LegionFanEmbeddedController\\",
   "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF6660DA-E245-4845-BCA7-3443F9E85998}|fan_ctrl.csproj|v:\\code\\some_project\\fan_control\\legionfanembeddedcontroller\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF6660DA-E245-4845-BCA7-3443F9E85998}|fan_ctrl.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|fan_ctrl||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF6660DA-E245-4845-BCA7-3443F9E85998}|fan_ctrl.csproj|v:\\code\\fan\\fan_ctrl\\fan_ctrl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF6660DA-E245-4845-BCA7-3443F9E85998}|fan_ctrl.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF6660DA-E245-4845-BCA7-3443F9E85998}|fan_ctrl.csproj|V:\\code\\fan\\fan_ctrl\\fan_ctrl\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EF6660DA-E245-4845-BCA7-3443F9E85998}|fan_ctrl.csproj|V:\\code\\some_project\\fan_control\\LegionFanEmbeddedController\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF6660DA-E245-4845-BCA7-3443F9E85998}|fan_ctrl.csproj|solutionrelative:utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF6660DA-E245-4845-BCA7-3443F9E85998}|fan_ctrl.csproj|v:\\code\\fan\\fan_ctrl\\fan_ctrl\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,29 +21,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "fan_ctrl",
-              "DocumentMoniker": "V:\\code\\fan\\fan_ctrl\\fan_ctrl\\fan_ctrl.csproj",
+              "DocumentMoniker": "V:\\code\\some_project\\fan_control\\LegionFanEmbeddedController\\fan_ctrl.csproj",
               "RelativeDocumentMoniker": "fan_ctrl.csproj",
-              "ToolTip": "V:\\code\\fan\\fan_ctrl\\fan_ctrl\\fan_ctrl.csproj",
-              "RelativeToolTip": "fan_ctrl.csproj",
+              "ToolTip": "V:\\code\\some_project\\fan_control\\LegionFanEmbeddedController\\fan_ctrl.csproj*",
+              "RelativeToolTip": "fan_ctrl.csproj*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-15T08:31:58.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T08:31:58.012Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "V:\\code\\fan\\fan_ctrl\\fan_ctrl\\Program.cs",
+              "DocumentMoniker": "V:\\code\\some_project\\fan_control\\LegionFanEmbeddedController\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "V:\\code\\fan\\fan_ctrl\\fan_ctrl\\Program.cs",
+              "ToolTip": "V:\\code\\some_project\\fan_control\\LegionFanEmbeddedController\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAswGIAAAAYAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowKcAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T09:57:10.075Z",
               "EditorCaption": ""
@@ -55,9 +51,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Utils.cs",
-              "DocumentMoniker": "V:\\code\\fan\\fan_ctrl\\fan_ctrl\\Utils.cs",
+              "DocumentMoniker": "V:\\code\\some_project\\fan_control\\LegionFanEmbeddedController\\Utils.cs",
               "RelativeDocumentMoniker": "Utils.cs",
-              "ToolTip": "V:\\code\\fan\\fan_ctrl\\fan_ctrl\\Utils.cs",
+              "ToolTip": "V:\\code\\some_project\\fan_control\\LegionFanEmbeddedController\\Utils.cs",
               "RelativeToolTip": "Utils.cs",
               "ViewState": "AQIAAE8AAAAAAAAAAAAowGQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

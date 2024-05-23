@@ -13,12 +13,10 @@ Theoretically supports the 2020/2021 models of the Legion series.
 
 The fan curve will be invalidated after switching performance mode (FN+Q).
 
-There are some [problems](problem_en.md),
-To address this issue, it is necessary to downgrade the BIOS to GKCN24WW, but this may lead to other issues:
-
-1. Nvidia driver installation failure (error code 31, can be forcefully installed using dism++).
-
-2. For instance, setting the fan speeds of fan1 and fan2 at a lower speed of 1000rpm, but when the GPU load increases, the fans may produce significant electrical noise.
+This project still has some unresolved issues. (For example, although a lower fan speed is set, the fans lock at 2300 RPM under high load).
+To address this, a BIOS downgrade to GKCN24WW is required. However, this may lead to other issues, such as:
+1. Nvidia driver installation failure: Error code 31 may occur. This can be resolved by forcefully installing the driver using DISM++.
+2. Fan noise: When fan speeds for fan1 and fan2 are set to a lower RPM (e.g., 1000 RPM), a buzzing noise may be audible during periods of increased GPU load.
 
 I have not found a solution for the higher version of the BIOS at the moment.
 
@@ -34,7 +32,12 @@ fan_ctrl.exe
 
 
 ########################### Read Mode ###########################
-FAN1 speed      1551                         FAN2 speed      1560
+AMD Ryzen 9 5900HX with Radeon Graphics                        67
+NVIDIA GeForce RTX 3080 Laptop GPU                             58
+GLOWAY YCT2TNVMe-M.2/80                                        44
+SAMSUNG MZVLB1T0HBLR-000L2                                     52
+
+FAN1 speed      1568                         FAN2 speed      1579
 
 FAN1 curve         0,  15,  15,  15,  20,  20,  20,  20,  32,  32
 FAN2 curve         0,  14,  15,  15,  20,  20,  20,  20,  32,  32
@@ -47,7 +50,7 @@ GPU  upper temp   60,  60,  60,  60,  60,  65,  69,  77, 127,   0
 IC   lower temp    0,  39,  42,  46, 127, 127, 127, 127, 127,   0
 IC   upper temp   41,  44,  50, 127, 127, 127, 127, 127, 127,   0
 
-EC Firmware Ver  64                      EC Chip model    8227 v2
+EC Firmware Ver  24                      EC Chip model    8227 v2
 
 
 
